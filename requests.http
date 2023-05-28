@@ -1,0 +1,30 @@
+###CREATE
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "George Mendez",
+    "age": 80,
+    "email": "Geor@gmail.com"
+
+}
+
+###SEACHE ALL
+GET http://localhost:9000/api/users HTTP/1.1
+
+###SEACH ONE
+GET http://localhost:9000/api/users/6453c8463bed5591348fd890 HTTP/1.1
+
+###uptdate a user
+PUT http://localhost:9000/api/users/6453c79a1e2b3d0142cf3c3a HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Nikola Tesla",
+    "age": 166,
+    "email": "nikola@gmail.com"
+
+}
+
+###Delete
+DELETE http://localhost:9000/api/users/64732885cd8160e56c829be1 HTTP/1.1
